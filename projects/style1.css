@@ -1,0 +1,16 @@
+section.h1{
+    background-color: aqua;
+    width: 50%;
+    
+}
+body{
+    background-color: rgb(185, 30, 139);
+    padding: 80px 80px;
+    padding-left: 30%;
+}
+
+section>#a{
+    color: aqua;
+    list-style-type: none;
+    border: 0px 0px 0px 0px;
+}

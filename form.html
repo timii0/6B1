@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                   <label for="fname">full name</label>
+                   <input type="text" name="fullname" id="fname" required>
+                </li>
+                <li>
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="address">home address</label>
+                    <input type="text" name="address" id="address" maxlength="50">
+                </li>
+                <li>
+                    <label for="telephone">phone number</label>
+                    <input type="tel" name="tel" id="telephone" required>
+                </li>
+                <li>
+                    <label for="dob">date of birth</label>
+                    <input type="date" name="date" id="dob">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>other information</legend>
+            <ul>
+                <li>
+                    gender <br>
+                    <label for="male">male</label>
+                    <input type="radio" name="gd" id="male"> 
+                    <label for="female">female</label>
+                    <input type="radio" name="gd" id="female">
+                </li>
+                <li>
+                    marital status <br>
+                    <label for="sig">single</label>
+                    <input type="radio" name="mar" id="sig"> <br>
+
+                    <label for="marr">married</label>
+                    <input type="radio" name="mar" id="marr"> <br>
+
+                    <label for="div">divorced</label>
+                    <input type="radio" name="mar" id="div"> <br>
+
+                    <label for="win">widowed</label>
+                    <input type="radio" name="mar" id="win"> <br>
+                </li>
+                <li>
+                    state of origin <br>
+                    <select>
+                        <optgroup label="south-west">
+                            <option value="s">select</option>
+                            <option value="ek">ekiti</option>
+                            <option value="og">ogun</option>
+                            <option value="os">osun</option>
+                            <option value="oy">oyo</option>
+                            <option value="la">lagos</option>
+                        </optgroup>
+                        <optgroup label="south-east">
+                            <option value="en">enugu</option>
+                            <option value="an">anambra</option>
+                            <option value="ab">abia</option>
+                            <option value="im">imo</option>
+                            <option value="eb">ebonyi</option>
+                        </optgroup>
+                    </select>                
+                </li>
+                <li>
+                    <label for="desc">describe yourself</label>
+                    <textarea name="desc" id="" cols="30" rows="10">describe yourself</textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <label for="upload file">upload file</label>
+        <input type="file" name="upload file" id="upload file" multiple accept="image/*">
+        <input type="submit" value="send data">
+    </form>
+</body>
+</html>
